@@ -1,0 +1,131 @@
+Package: freecwmp
+Version: 2014-06-12-8f3c163fc85337e63bfa64da3c02f10d1fe3b169
+Depends: libc, libcurl, libfreecwmp, libuci, libubox, libubus, libmicroxml, shflags
+Source: feeds/management/freecwmp
+Section: utils
+Maintainer: Luka Perkov <luka@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 28384
+Filename: freecwmp_2014-06-12-8f3c163fc85337e63bfa64da3c02f10d1fe3b169_ramips_24kec.ipk
+Size: 29101
+MD5Sum: e992fc9da78e64e4df8882c62b334ec4
+SHA256sum: f20dc4aed23bfe2f7efbf257023e97027af59601c4a0dbfc4ef5de6ee8e32419
+Description:  A free client implementation of CWMP (TR-069) protocol
+
+Package: freenetconfd
+Version: 2014-07-10-e2ab83cd0f7610f31d6101d645da7ea5640a132c
+Depends: libc, libuci, libubox, libubus, libssh, libroxml
+Source: feeds/management/freenetconfd
+Section: utils
+Maintainer: Luka Perkov <luka@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 10534
+Filename: freenetconfd_2014-07-10-e2ab83cd0f7610f31d6101d645da7ea5640a132c_ramips_24kec.ipk
+Size: 11125
+MD5Sum: b68b14e54f37e4c23798ded315761d3b
+SHA256sum: 4e3be71cde5c380129a377dd0535c95a9ec0cf4737edf711eb442879549bf0a9
+Description:  netconf server
+
+Package: libev
+Version: 4.15-3
+Depends: libc
+Source: feeds/management/libev
+Section: libs
+Architecture: ramips_24kec
+Installed-Size: 20681
+Filename: libev_4.15-3_ramips_24kec.ipk
+Size: 21299
+MD5Sum: 150fc67bf642ba37e5550baf8fd26bde
+SHA256sum: eb5598914819fba75d11ad04cb4be2b802bb0782e7e7db97adfccb56b594c61c
+Description:  A full-featured and high-performance event loop that is loosely modelled after
+ libevent, but without its limitations and bugs.
+
+Package: libfreecwmp
+Version: 2014-06-12-d2fdd97d66fde14859c06228a922066d9e8b669b
+Depends: libc
+Source: feeds/management/libfreecwmp
+Section: libs
+Maintainer: Luka Perkov <luka@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 2242
+Filename: libfreecwmp_2014-06-12-d2fdd97d66fde14859c06228a922066d9e8b669b_ramips_24kec.ipk
+Size: 2831
+MD5Sum: 8c4f1af6bbf7e24e7da0f16656bdabb9
+SHA256sum: 94976a94cecd9b905a0a87eb0437ea1f5a1d2ba4fed36eb337a126085f92707a
+Description:  CWMP library
+
+Package: libmicroxml
+Version: 2012-06-11-72965423184f24cc0b963d91c2d1863cdb01b6aa
+Depends: libc
+Source: feeds/management/libmicroxml
+Section: libs
+Maintainer: Luka Perkov <luka@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 17706
+Filename: libmicroxml_2012-06-11-72965423184f24cc0b963d91c2d1863cdb01b6aa_ramips_24kec.ipk
+Size: 18210
+MD5Sum: 86733665a80fc011ef806911f4a7e360
+SHA256sum: 832fe3858b629b4d9f19b4b47de32aa7ec5941cbcefdf50a82db2409baff2a63
+Description:  A micro sized XML library
+
+Package: libnetconf
+Version: 0.8.1-3
+Depends: libc, libxml2, zlib, libxslt, libcurl, libssh2
+Source: feeds/management/libnetconf
+Section: libs
+Maintainer: Jiri Slachta <slachta@cesnet.cz>
+Architecture: ramips_24kec
+Installed-Size: 150141
+Filename: libnetconf_0.8.1-3_ramips_24kec.ipk
+Size: 150838
+MD5Sum: fdd2179a019f44b4f387249ea25062a8
+SHA256sum: c5ada061222089837d8fb040feec5089401c12d79128f997239c0f7446704381
+Description:  libnetconf is the NETCONF library in C intended for building NETCONF clients and servers.
+ 
+ libnetconf provides basic functions to connect NETCONF client and server to each other via
+ SSH, to send and receive NETCONF messages and to store and work with the configuration data 
+ in a datastore.
+
+Package: libssh
+Version: 2014-07-10-59a179950150d0305d6189ce9c126a9a0c5f6ab4
+Depends: libc, libpthread, librt, zlib, libopenssl
+Source: feeds/management/libssh
+Section: lib
+Maintainer: Luka Perkov <luka@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 104720
+Filename: libssh_2014-07-10-59a179950150d0305d6189ce9c126a9a0c5f6ab4_ramips_24kec.ipk
+Size: 105302
+MD5Sum: 9bea71955fb9fdbb5dc69b49d0d87dc9
+SHA256sum: 32328367925e3cfa870df367d343cc6f40f4bc6c84ea6817e51af3bac8eda241
+Description:  libssh is a mulitplatform C library implementing the SSHv2 and SSHv1 protocol
+ for client and server implementations.
+
+Package: shflags
+Version: 2012-06-11_r133-1.0.x
+Depends: libc, getopt
+Source: feeds/management/shflags
+Section: libs
+Maintainer: Luka Perkov <luka@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 4296
+Filename: shflags_2012-06-11_r133-1.0.x_ramips_24kec.ipk
+Size: 4858
+MD5Sum: 637830526df925bef41b5013d3707d91
+SHA256sum: 45c58f90547d8d5a1fe54903cc6ae276713c67cc46036ad90604fa727326c4f3
+Description:  command-line flags module for Unix shell scripts
+
+Package: shtool
+Version: 2.0.8-1
+Depends: libc
+Source: feeds/management/shtool
+Section: utils
+Architecture: ramips_24kec
+Installed-Size: 33522
+Filename: shtool_2.0.8-1_ramips_24kec.ipk
+Size: 34181
+MD5Sum: 64ab6acc84109821e253a9d8fc9c5590
+SHA256sum: 8fd3601f94e905f8ccb21f39bdfd207cec2dee07c2a36b622dd42a8c3c4d1b12
+Description:  GNU shtool is a compilation of small but very stable and portable shell
+ scripts into a single shell tool.
+

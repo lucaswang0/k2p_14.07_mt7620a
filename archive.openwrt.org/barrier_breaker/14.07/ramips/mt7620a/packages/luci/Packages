@@ -1,0 +1,1253 @@
+Package: community-profiles
+Version: 2
+Depends: libc, freifunk-common
+Source: feeds/luci/contrib/package/community-profiles
+Section: luci
+Architecture: ramips_24kec
+Installed-Size: 5272
+Filename: community-profiles_2_ramips_24kec.ipk
+Size: 5814
+MD5Sum: 376775c854b608c31a24d063c0a6085a
+SHA256sum: bf2574d81ba1243572aa805f716e68692ff6486857cead7cf1a20778e356a17a
+Description:  These community profiles set defaults for various free network/freifunk communities and are used by wizards like ffwizard and meshwizard.
+
+Package: freifunk-common
+Version: 1
+Depends: libc
+Source: feeds/luci/contrib/package/freifunk-common
+Section: luci
+Architecture: ramips_24kec
+Installed-Size: 2945
+Filename: freifunk-common_1_ramips_24kec.ipk
+Size: 3517
+MD5Sum: 95e3799b1492dd220bedc366a7b1456f
+SHA256sum: 020ace345d5c74e6022960d14fd73f8c14a89ff8ec6b6fc9865d196229830a56
+Description:  Common files and scripts that are needed to run free wireless mesh networks.
+
+Package: freifunk-firewall
+Version: 3
+Depends: libc, firewall
+Source: feeds/luci/contrib/package/freifunk-firewall
+Section: luci
+Architecture: ramips_24kec
+Installed-Size: 1143
+Filename: freifunk-firewall_3_ramips_24kec.ipk
+Size: 1879
+MD5Sum: 7e3cf50586c552c5fd1c4f8cff690722
+SHA256sum: 8495ae60d97ef87719e7caa380239f48abd4ac9e1f7721f03cbb349f74e26de4
+Description:  Various firewall extensions for Freifunk. Includes NAT fixes and advanced settings.
+
+Package: freifunk-gwcheck
+Version: 4
+Depends: libc, firewall, ip, iptables-mod-ipopt, olsrd-mod-dyn-gw-plain
+Source: feeds/luci/contrib/package/freifunk-gwcheck
+Section: luci
+Architecture: ramips_24kec
+Installed-Size: 2006
+Filename: freifunk-gwcheck_4_ramips_24kec.ipk
+Size: 2686
+MD5Sum: 56a80e1511423a6ed1243e4a0646dbca
+SHA256sum: 086efb24dfeb4026a45931fbd25b18d0b8aa41996f91e3a76d9ecfaa97199c10
+Description:  This script periodically checks if internet is available via your own gateway. If it detects that it is broken, then the defaultroute is removed from the main table and temporarilly placed in table gw-check until your internet works again. Config file is /etc/config/freifunk-gwcheck.
+
+Package: freifunk-mapupdate
+Version: 1
+Depends: libc, olsrd-mod-nameservice
+Source: feeds/luci/contrib/package/freifunk-mapupdate
+Section: luci
+Architecture: ramips_24kec
+Installed-Size: 1282
+Filename: freifunk-mapupdate_1_ramips_24kec.ipk
+Size: 1913
+MD5Sum: f98382331966c40ed3c807ff3f4a3d70
+SHA256sum: fca0c2e3fdd0755a25f28a6aaac349f28507bac6f9d2161fbb83c0a18b8311ad
+Description:  This script updates the freifunkmap (also known as the global map, see http://map.berlin.freifunk.net) every hour. Config file is /etc/config/freifunk-mapupdate.
+
+Package: freifunk-p2pblock
+Version: 3
+Depends: libc, iptables-mod-filter, iptables-mod-ipp2p, l7-protocols, iptables-mod-conntrack-extra
+Source: feeds/luci/contrib/package/freifunk-p2pblock
+Section: luci
+Architecture: ramips_24kec
+Installed-Size: 1317
+Filename: freifunk-p2pblock_3_ramips_24kec.ipk
+Size: 1947
+MD5Sum: 2230b697602a28256b9802a08c4db0ca
+SHA256sum: 00fe86d9a50e2c1e96ae5995d11b1a8cbc1e568d4331d2dd81ca60b19b0e2db6
+Description:  Simple Addon for Freifunk which use iptables layer7-, ipp2p- and recent-modules 
+ to block p2p/filesharing traffic
+
+Package: freifunk-policyrouting
+Version: 6
+Depends: libc, ip
+Source: feeds/luci/contrib/package/freifunk-policyrouting
+Section: luci
+Architecture: ramips_24kec
+Installed-Size: 2271
+Filename: freifunk-policyrouting_6_ramips_24kec.ipk
+Size: 2967
+MD5Sum: 024ad3097b8b0aee93c3695105b7ff92
+SHA256sum: 03b565cad4ee343821986bceab53098405d274c08188cb6fec4ea59e91050b44
+Description:  Allows you to send your own traffic via your own default gateway while sending traffic received from the mesh to a gateway in the mesh.
+
+Package: freifunk-watchdog
+Version: 8
+Depends: libc, libuci
+Source: feeds/luci/contrib/package/freifunk-watchdog
+Section: luci
+Architecture: ramips_24kec
+Installed-Size: 5561
+Filename: freifunk-watchdog_8_ramips_24kec.ipk
+Size: 6179
+MD5Sum: f47fcfc3073db0880b01e8ea8976e4d4
+SHA256sum: 67a6c9c0ddd8ad2e8fcebdf32f1bec4ba2228e18b186582ab86310f66f864b81
+Description:  A watchdog daemon that monitors wireless interfaces to ensure the correct bssid and channel.
+ The process will initiate a wireless restart as soon as it detects a bssid or channel mismatch.
+
+Package: luci
+Version: 0.12+svn-r10530-1
+Depends: libc, uhttpd, uhttpd-mod-ubus, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-proto-ppp, libiwinfo-lua, luci-lib-nixio
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 105
+Filename: luci_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 770
+MD5Sum: 9fdddaa9a749bc326014a9550c3282c3
+SHA256sum: e90ff2e536f7725f03e725d9ac2b1fe6275dc2ac5ab9ce6b2ec1720604014c20
+Description:  Standard OpenWrt set including full admin with ppp support and the default OpenWrt theme
+
+Package: luci-app-ahcp
+Version: 0.12+svn-r10530-1
+Depends: libc, ahcpd
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 19873
+Filename: luci-app-ahcp_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 20497
+MD5Sum: 03309d2eed952b6e43969a79acb63968
+SHA256sum: 313a81249203ed14c2ee7de4afe069d5f257b8b934f130d7949c43431e8f2735
+Description:  LuCI Support for AHCPd
+
+Package: luci-app-commands
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 15360
+Filename: luci-app-commands_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 15914
+MD5Sum: 20669567b89f779edb4f8c8c65b1b2f3
+SHA256sum: ac8e7db6c4df604f83a6750bf70792f47c8ebf68e525b896284bc70975e9e910
+Description:  LuCI Shell Command Module
+
+Package: luci-app-ddns
+Version: 0.12+svn-r10530-1
+Depends: libc, ddns-scripts
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 11190
+Filename: luci-app-ddns_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 11786
+MD5Sum: 13b0b1a526deed1a9fe1ce1e43236db2
+SHA256sum: b1dad47aebf99728e2f6945ddf2f9e55efa203215f2e342de5b9feaaef16f847
+Description:  Dynamic DNS configuration module
+
+Package: luci-app-diag-core
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 5661
+Filename: luci-app-diag-core_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 6240
+MD5Sum: 1657c0cb1f54d0e1e575de9ffe459375
+SHA256sum: 0f844915d69c8b5b00b3bf7f0e10cab8c006ee6cb575419df9ca18d420a31b0c
+Description:  LuCI Diagnostics Tools (Core)
+
+Package: luci-app-diag-devinfo
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-app-diag-core, smap, netdiscover, mac-to-devinfo, httping, smap-to-devinfo, netdiscover-to-devinfo
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 27798
+Filename: luci-app-diag-devinfo_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 28493
+MD5Sum: bb52430be77528c1f826f1a6e9b66e75
+SHA256sum: 4c00878965a7fa9c371cb228f1a02367e11537e61389e6f061e880e7ad3c163b
+Description:  LuCI Diagnostics Tools (Device Info)
+
+Package: luci-app-firewall
+Version: 0.12+svn-r10530-1
+Depends: libc, firewall
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 63685
+Filename: luci-app-firewall_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 64344
+MD5Sum: aa91d37c678208bef8ea16d822c8d43f
+SHA256sum: cda96d3bfb328f2d2ffa1b5e16c69d8eac1bceceabe005e30506bfa8d3ca7aa8
+Description:  Firewall and Portforwarding application
+
+Package: luci-app-freifunk-diagnostics
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 2430
+Filename: luci-app-freifunk-diagnostics_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 3150
+MD5Sum: f6f4a1377e8eb8e178804809ae12469d
+SHA256sum: 0ce1aa240295e8f360faa235a570da84052f46785eaa6a84a6228447fbcab36b
+Description:  Tools for network diagnosis like traceroute and ping
+
+Package: luci-app-freifunk-policyrouting
+Version: 0.12+svn-r10530-1
+Depends: libc, freifunk-policyrouting
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 7313
+Filename: luci-app-freifunk-policyrouting_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 7932
+MD5Sum: b65b2d14af07507ba5c33b9cc86cbedb
+SHA256sum: 1d9e420e8fd63bdaa90f458d968d247a676d1e9d6f8a44f37ba55d7e686871be
+Description:  Policy routing for mesh traffic
+
+Package: luci-app-freifunk-widgets
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-mod-freifunk
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 4522
+Filename: luci-app-freifunk-widgets_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 5124
+MD5Sum: a4c1d609eb2a1a4697b45c4d3b441afa
+SHA256sum: dc2fc9caed57122417fcb5f3aa6483349bc5447486cfdd1092d6c6740a4090e8
+Description:  Widgets for the Freifunk index page
+
+Package: luci-app-hd-idle
+Version: 0.12+svn-r10530-1
+Depends: libc, hd-idle
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 6128
+Filename: luci-app-hd-idle_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 6844
+MD5Sum: c6df1062c69cf604ff72e27737ab1c1f
+SHA256sum: 08bf061d68f09ac66937255fa8f72daeb3f60d3fff3230139bc11e5ba23c3b7c
+Description:  Hard Disk Idle Spin-Down module
+
+Package: luci-app-ltqtapi
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 1918
+Filename: luci-app-ltqtapi_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 2496
+MD5Sum: 3509733e23cd1e7401077b15679067c3
+SHA256sum: 72a399d8e5f0fc7be75a851df31f1f3f6fa5ad371ac7aef6dbb1acd39faee242
+Description:  Lantiq voip
+
+Package: luci-app-meshwizard
+Version: 0.12+svn-r10530-1
+Depends: libc, meshwizard
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 15200
+Filename: luci-app-meshwizard_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 15895
+MD5Sum: 7f798ebc50a7e6bc1eb3953aa4102b2b
+SHA256sum: fdb8525c87bcab053aed86b7407905286ed1807971af4dbd1f18ab9d15b06aa2
+Description:  Shellscript based wizard to setup mesh networks
+
+Package: luci-app-minidlna
+Version: 0.12+svn-r10530-1
+Depends: libc, minidlna
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 20717
+Filename: luci-app-minidlna_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 21324
+MD5Sum: 8aaab17adea466d1ce2742979c35b4e1
+SHA256sum: 043b2a4c3e598c6acd402557d3f1fb437b8f8f9e4da8783dec728b14bcac91f6
+Description:  LuCI Support for miniDLNA
+
+Package: luci-app-mmc-over-gpio
+Version: 0.12+svn-r10530-1
+Depends: libc, kmod-mmc-over-gpio
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 3827
+Filename: luci-app-mmc-over-gpio_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 4545
+MD5Sum: c99aaf5a06f5ec2e22422ca8b3160fee
+SHA256sum: 7510122c7c31ef86c87a8a9d39668a457d6e17ce6f954f32eb97bc9143ada381
+Description:  MMC-over-GPIO configuration module
+
+Package: luci-app-multiwan
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-app-firewall, multiwan
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 15032
+Filename: luci-app-multiwan_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 15633
+MD5Sum: c30d2011246e62ab65e6919e0a90fa29
+SHA256sum: 94acd8d5c3a4148a06a2e8ef3c5ac9d5e860a77e51ae7c3ce92e765484ac3693
+Description:  LuCI Support for the OpenWrt MultiWAN agent
+
+Package: luci-app-ntpc
+Version: 0.12+svn-r10530-1
+Depends: libc, ntpclient
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 7736
+Filename: luci-app-ntpc_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 8369
+MD5Sum: fef32d08f4563f84f698449f2c364470
+SHA256sum: d8e2d74da319fa19ff64cee2500de1ddbf4c3b3b1bb58ab775873756ee3feb32
+Description:  NTP time synchronisation configuration module
+
+Package: luci-app-olsr
+Version: 0.12+svn-r10530-1
+Depends: libc, olsrd, olsrd-mod-jsoninfo, luci-lib-luaneightbl
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 63782
+Filename: luci-app-olsr_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 64500
+MD5Sum: e89b5d71be2915ee883ef9fe48d071f9
+SHA256sum: 473c2188febf1251cbef196274d45cc37999f93a1cef531adfe682ab2b662609
+Description:  OLSR configuration and status module
+
+Package: luci-app-olsr-services
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-app-olsr, olsrd, olsrd-mod-nameservice
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 2294
+Filename: luci-app-olsr-services_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 2913
+MD5Sum: 510676bb8a28b8a48da5fa56f111627d
+SHA256sum: b258f29ad7a1b0c83fbae54d78fc2a23421a2ac1495d58227253324aa1605fd2
+Description:  Show services announced with the nameservice plugin
+
+Package: luci-app-olsr-viz
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-app-olsr, olsrd, olsrd-mod-txtinfo
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 11358
+Filename: luci-app-olsr-viz_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 11971
+MD5Sum: 9ae3f8daa97eabdaf04cf03255df5e55
+SHA256sum: bb3ff1380c9aa32771bb5abf4a9822c91715e30142f04fcd65c04160abdc2c60
+Description:  OLSR Visualisation
+
+Package: luci-app-p2pblock
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-app-firewall, freifunk-p2pblock
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 6379
+Filename: luci-app-p2pblock_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 7160
+MD5Sum: 6b127373283febc29b68121792766fcb
+SHA256sum: 5e453ccc528693559dba13c755ff6a2a0763be4688ff75182f83a31f39f8589a
+Description:  LuCI Support for the Freifunk P2P-Block addon
+
+Package: luci-app-p910nd
+Version: 0.12+svn-r10530-1
+Depends: libc, p910nd
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 6622
+Filename: luci-app-p910nd_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 7329
+MD5Sum: 306013db7acc58a4bb99a1fa124f9989
+SHA256sum: d298d45f7500351adcf27e484d6103e26f5db6454818fb646b1acb3a7ab20871
+Description:  p910nd - Printer server module
+
+Package: luci-app-pbx
+Version: 0.12+svn-r10530-1
+Depends: libc, asterisk18, asterisk18-app-authenticate, asterisk18-app-disa, asterisk18-app-setcallerid, asterisk18-app-system, asterisk18-chan-gtalk, asterisk18-codec-a-mu, asterisk18-codec-alaw, asterisk18-func-cut, asterisk18-res-clioriginate, asterisk18-func-channel, asterisk18-chan-local, asterisk18-app-record, asterisk18-app-senddtmf, asterisk18-res-crypto
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 95923
+Filename: luci-app-pbx_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 96739
+MD5Sum: e8d920350894d1e2d76be7719eaa47c2
+SHA256sum: cfad2a0a59dbf16ccb1ffe7295c853acc2362399e1ea007ed477ccbe2e673130
+Description:  LuCI PBX Administration
+
+Package: luci-app-pbx-voicemail
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-app-pbx, asterisk18, msmtp, coreutils-base64
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 14293
+Filename: luci-app-pbx-voicemail_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 14926
+MD5Sum: c4b9b6b62f1888a58cae817a0c4d5695
+SHA256sum: 91a836f35ddcab554bc279f63cb7aa53cef6dccef861fe69d460ee0c089f6796
+Description:  LuCI PBX Administration Voicemail Support
+
+Package: luci-app-polipo
+Version: 0.12+svn-r10530-1
+Depends: libc, polipo
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 22849
+Filename: luci-app-polipo_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 23571
+MD5Sum: d9e915d4dc0d02cd5fc99bdd952fafc9
+SHA256sum: d966e3e83e7fad9df6c93c7f335d89175a364d23ebee6edcb729772c8bf4a626
+Description:  LuCI Support for the Polipo Proxy
+
+Package: luci-app-qos
+Version: 0.12+svn-r10530-1
+Depends: libc, qos-scripts
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 10873
+Filename: luci-app-qos_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 11463
+MD5Sum: 27f2d2234a8d51a2f92fbf8d7d14854c
+SHA256sum: 3a9112c914f19247cefc607f7c6b6b625e20306b1037ce4855552f6e9bd9220f
+Description:  Quality of Service configuration module
+
+Package: luci-app-radvd
+Version: 0.12+svn-r10530-1
+Depends: libc, radvd
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 30385
+Filename: luci-app-radvd_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 31143
+MD5Sum: 8bb46af1d35d40064fa58c5d7dd62ea6
+SHA256sum: e77d9d3aaf1d93973facc783fc2666c95463e67393cdc341556e008db4c5fc12
+Description:  LuCI Support for Radvd
+
+Package: luci-app-samba
+Version: 0.12+svn-r10530-1
+Depends: libc, samba36-server
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 12359
+Filename: luci-app-samba_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 12997
+MD5Sum: 9e5e8c76595e969132ffef4ae268a812
+SHA256sum: b804527e778a055ba44b963e707d835f7c5f94892677895ff696e617dc56fec7
+Description:  Network Shares - Samba SMB/CIFS module
+
+Package: luci-app-siitwizard
+Version: 0.12+svn-r10530-1
+Depends: libc, kmod-siit
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 3875
+Filename: luci-app-siitwizard_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 4489
+MD5Sum: 2de85174f7c31ec3f49af610657962ee
+SHA256sum: cc6991185b5ec173343b855b11c50123671c81e7d7b1d1109730c0437e7ee9d0
+Description:  SIIT IPv4-over-IPv6 configuration wizard
+
+Package: luci-app-splash
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-lib-nixio, tc, kmod-sched, iptables-mod-nat-extra, iptables-mod-ipopt
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 41463
+Filename: luci-app-splash_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 42346
+MD5Sum: 0a2812d8e946096be4e69854614ae6fc
+SHA256sum: c9a75272c89751498e475ce70ec6063c750769870c1faf398fccf1ec3dbab527
+Description:  Freifunk DHCP-Splash application
+
+Package: luci-app-statistics
+Version: 0.12+svn-r10530-1
+Depends: libc, collectd, rrdtool1, collectd-mod-rrdtool, collectd-mod-iwinfo, collectd-mod-interface, collectd-mod-load, collectd-mod-network
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 97667
+Filename: luci-app-statistics_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 98527
+MD5Sum: 5c163ff04d6eaa77f83fcac70ab09d5a
+SHA256sum: f34fe2d598f82364e7ee755fc0cad9525e36288336489763e5e47dae5255fe42
+Description:  LuCI Statistics Application
+
+Package: luci-app-tinyproxy
+Version: 0.12+svn-r10530-1
+Depends: libc, tinyproxy
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 25350
+Filename: luci-app-tinyproxy_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 25942
+MD5Sum: 478e0bf42b80bec3e87608048ceab1e4
+SHA256sum: 919402441364de371e8c3174a7b265bbebd6a0dbfcfe6ee4b3581510164c40b3
+Description:  Tinyproxy - HTTP(S)-Proxy configuration
+
+Package: luci-app-transmission
+Version: 0.12+svn-r10530-1
+Depends: libc, transmission-daemon
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 26745
+Filename: luci-app-transmission_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 27337
+MD5Sum: 6fc289601439f13401b19d7ce54975d8
+SHA256sum: 1dca8cfd8be7ab0f02dfd34b1806c71a0a802fde29fc89ee9462284627294ea0
+Description:  LuCI Support for Transmission
+
+Package: luci-app-upnp
+Version: 0.12+svn-r10530-1
+Depends: libc, miniupnpd
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 19844
+Filename: luci-app-upnp_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 20474
+MD5Sum: 97e9755371510e3ee18fbd4475b1619d
+SHA256sum: bfaa0e83e9a9d146eeaf813420fe24bf2bebc8dbe73ec17cd15e65834770d264
+Description:  Universal Plug & Play configuration module
+
+Package: luci-app-ushare
+Version: 0.12+svn-r10530-1
+Depends: libc, ushare
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 6964
+Filename: luci-app-ushare_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 7732
+MD5Sum: 257f2fb849672e626e790d8778ca5db0
+SHA256sum: 7e109fac1850ed1564bcb2ad4e5178dc47c29f138d52a5735b62f86261daf546
+Description:  uShare - UPnP A/V & DLNA Media Server
+
+Package: luci-app-vnstat
+Version: 0.12+svn-r10530-1
+Depends: libc, vnstat, vnstati
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 9553
+Filename: luci-app-vnstat_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 10280
+MD5Sum: cb3d3fd3e2e00e8307a984c24b35dc84
+SHA256sum: c9513c294889390f9a91ca1639c1a6e7d308005a40a5da8c9f14eeb2047d1645
+Description:  LuCI Support for VnStat
+
+Package: luci-app-voice-core
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 2175
+Filename: luci-app-voice-core_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 2741
+MD5Sum: 1e9a0ce461bc23a0840f23a09d1a3d24
+SHA256sum: cdd03e66ad8e406dfbe34cfce506ddeb81b753d176e6539295c3dd4cca86c721
+Description:  LuCI Voice Software (Core)
+
+Package: luci-app-voice-diag
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-app-diag-devinfo
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 4611
+Filename: luci-app-voice-diag_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 5214
+MD5Sum: ecdd8c526294593f819a2454d9685cf5
+SHA256sum: 8350de817f0941b3e33404ffa325ced932268f43f62d4012e14eb51511b2be60
+Description:  LuCI Voice Software (Diagnostics)
+
+Package: luci-app-watchcat
+Version: 0.12+svn-r10530-1
+Depends: libc, watchcat
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 9279
+Filename: luci-app-watchcat_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 10051
+MD5Sum: ae868783839c7abce8544ebd9a1be5f1
+SHA256sum: 0873c3748e4bcc11ce42c47f60e1e41948ffe54e8d1ca3e8adc7b8bffce18073
+Description:  LuCI Support for Watchcat
+
+Package: luci-app-wol
+Version: 0.12+svn-r10530-1
+Depends: libc, etherwake
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 8870
+Filename: luci-app-wol_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 9495
+MD5Sum: 421390cd93bedf9ba7f0fb27c76286ae
+SHA256sum: 67cc7abec81673e1045ed6ae8b348db9b81d53d5ed7d4738e03a4ce42a4b0ec3
+Description:  LuCI Support for Wake-on-LAN
+
+Package: luci-app-wshaper
+Version: 0.12+svn-r10530-1
+Depends: libc, wshaper
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 7361
+Filename: luci-app-wshaper_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 8095
+MD5Sum: afe81df11ed8a9f78e274fc814283b85
+SHA256sum: b872f438300928d39da8c15d8aefe2db51aa21496a037a898afff94dd9465732
+Description:  LuCI Support for wshaper
+
+Package: luci-base
+Version: 0.12+svn-r10530-1
+Depends: libc, lua, libuci-lua, libubus-lua
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 141304
+Filename: luci-base_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 142056
+MD5Sum: eb47e3a9ed074129b94ad75ac2551a93
+SHA256sum: c2ecd980120efc3720863815a60c3f15adba0487ac550baef6cac5104ff2a4b0
+Description:  LuCI core libraries
+
+Package: luci-i18n-catalan
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 16421
+Filename: luci-i18n-catalan_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 17105
+MD5Sum: ef48fa9c100e0c9eb8fda305672fb78e
+SHA256sum: 25ca289190257f9b2e67f10c28d6c999d868015629515b07ce1120f84df4d987
+Description:  Catalan (by Eduard Duran)
+
+Package: luci-i18n-chinese
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 19558
+Filename: luci-i18n-chinese_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 20312
+MD5Sum: 717cf2d34b96e32bca6d1d07dfc0ec36
+SHA256sum: 10344724334738aae4f4cd55c3ac1491770074a2f2656985d890a27973ff417e
+Description:  Chinese (by Chinese Translators)
+
+Package: luci-i18n-english
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 767
+Filename: luci-i18n-english_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 1462
+MD5Sum: 559b790f85b85579d17fb4e76d07f6b9
+SHA256sum: 77092b3a7adcd6e99c45b15e0597cac1156056a22f5fe481d64dfaba87d84086
+Description:  English
+
+Package: luci-i18n-french
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 21231
+Filename: luci-i18n-french_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 21966
+MD5Sum: badb0e0f623446fa53d646749176774b
+SHA256sum: 730a6b981728f06dc017d50723eb8e12a2c80015aa0f68f0a88f08d9cc5a2119
+Description:  French (by Florian Fainelli)
+
+Package: luci-i18n-german
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 20486
+Filename: luci-i18n-german_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 21195
+MD5Sum: 15e334afcd351e0fe259d51eaa7a4207
+SHA256sum: 501fe75c9b99c89b4d8ceee14c998eb3b18bdd20b4ef9c0c869c76cba1a0e54e
+Description:  German
+
+Package: luci-i18n-greek
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 17462
+Filename: luci-i18n-greek_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 18217
+MD5Sum: b684c05084264981b34d2700353c0b98
+SHA256sum: 4c095ca36b43e8ad6d36ec90fadfc5b0364279549755c989fd663177b00edf30
+Description:  Greek (by Vasilis Tsiligiannis)
+
+Package: luci-i18n-hebrew
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 6977
+Filename: luci-i18n-hebrew_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 7708
+MD5Sum: 66e9078ddf77480b1d622fb61bb168c9
+SHA256sum: 596a3f9d9e5cf4af690b19239c56e1c18449b2b20ece89ef1c282bb288c26eeb
+Description:  Hebrew
+
+Package: luci-i18n-hungarian
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 21898
+Filename: luci-i18n-hungarian_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 22620
+MD5Sum: dfc2d74d180eb80e4398cc8ab6968019
+SHA256sum: ae8cb99793ff1b99a00cf4e735741e9d9f6090cdeabad902cfd2632197db001f
+Description:  Hungarian
+
+Package: luci-i18n-italian
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 16821
+Filename: luci-i18n-italian_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 17515
+MD5Sum: ae715da892afc2f5399140b35b75c7bf
+SHA256sum: 6066c93588b28948d15efae49c649c23a3e39bba4032f7df6470dd99f62ed154
+Description:  Italian (by Matteo Croce)
+
+Package: luci-i18n-japanese
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 20548
+Filename: luci-i18n-japanese_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 21241
+MD5Sum: ee84be99b213b78996199a5202b6f620
+SHA256sum: f8404dafd367e53ef601f7c5eb79a2b0ea933ed9331ad722e28b1e744bb9639f
+Description:  Japanese (by Tsukasa Hamano)
+
+Package: luci-i18n-malay
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 7515
+Filename: luci-i18n-malay_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 8145
+MD5Sum: 4d373c2a8aaa5bf5f00dbcd17532cd6f
+SHA256sum: dc7f62f5688c7560a8155d6c987e9a68d7a012fb767fa60b13fd0edd975c6349
+Description:  Malay (by Teow Wai Chet)
+
+Package: luci-i18n-norwegian
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 20457
+Filename: luci-i18n-norwegian_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 21171
+MD5Sum: 11b6acfc7e0b3b3840cbd41484deffbb
+SHA256sum: 8728f86a53007e3ae4f534487aad32385073a9a5ff4e022131f5c9ea52b4a0fc
+Description:  Norwegian (by Lars Hardy)
+
+Package: luci-i18n-polish
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 21717
+Filename: luci-i18n-polish_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 22430
+MD5Sum: ba6828f5811f0668bdbe435ac95d047a
+SHA256sum: 2c5a22ffebdac3548f070e997d3104c93f314c4354c3d4681df2a093f8fec810
+Description:  Polish
+
+Package: luci-i18n-portuguese
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 18839
+Filename: luci-i18n-portuguese_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 19535
+MD5Sum: 92e68e9f8d0fc21c754aef7b80d7c8c7
+SHA256sum: 41583107d311cd0785ad6254c177d2ff2b65014c5e5182c78ba71042a82bfd53
+Description:  Portuguese (by Jose Monteiro)
+
+Package: luci-i18n-portuguese-brazilian
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 21728
+Filename: luci-i18n-portuguese-brazilian_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 22474
+MD5Sum: 93c346c673cd84f8ed20b09f12e60c9e
+SHA256sum: a0c16610a095170aba65068b5203a39acf36f76aa4c8f92f3242bd39c1f710c2
+Description:  Portuguese (Brazilian) (by Carlos Cesario)
+
+Package: luci-i18n-romanian
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 10537
+Filename: luci-i18n-romanian_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 11225
+MD5Sum: 230a16c1b2af591e00d7bc094b68e6da
+SHA256sum: 6ed55ea9c59978dea3452455dd0aff1cc62c8644ffb94c9af66d596e40b542d7
+Description:  Romanian
+
+Package: luci-i18n-russian
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 24440
+Filename: luci-i18n-russian_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 25171
+MD5Sum: e09a19cd2279203c86b4cf5b478e09ca
+SHA256sum: 643d395d2984dc53b37d2b374e8f1f5e15d2081386f5b5a8bacfe588b822c59d
+Description:  Russian (by Skryabin Dmitry)
+
+Package: luci-i18n-spanish
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 21049
+Filename: luci-i18n-spanish_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 21679
+MD5Sum: 9d8914ebb2d50c2455696e9ecc44d0e3
+SHA256sum: ece025f89039222bac8e7c76dfca490577b81983a8be5d4b776eed8042489cb5
+Description:  Spanish (by Guillermo Javier Nardoni)
+
+Package: luci-i18n-ukrainian
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 24930
+Filename: luci-i18n-ukrainian_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 25639
+MD5Sum: 37a6ee1cb53c6d700b8eb1e05b0209b2
+SHA256sum: f0ac37d935c95d9aada3fc1d7ff0e7edada2a6e49964e7ac874b07b49b3f429c
+Description:  Ukrainian
+
+Package: luci-i18n-vietnamese
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 6559
+Filename: luci-i18n-vietnamese_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 7256
+MD5Sum: 3c1c0499d0d5ef56bb49f665b87ee962
+SHA256sum: dec4f9db181d4211d662ba0a8c41cf9c1b879fc75fcee28f45c5218f5821b732
+Description:  Vietnamese (by Hong Phuc Dang)
+
+Package: luci-lib-httpclient
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-base, luci-base, luci-lib-nixio
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 4910
+Filename: luci-lib-httpclient_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 5481
+MD5Sum: fd3b0b2563859d87008a2e679a549995
+SHA256sum: 0b515f101d1a96f95a918af49188a2512285ce4ba8a44eabad72f0edae099444
+Description:  HTTP(S) client library
+
+Package: luci-lib-json
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 4052
+Filename: luci-lib-json_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 4642
+MD5Sum: 00dc4a656a42c16d1ffe3380faacbe71
+SHA256sum: 20ef66143b9a3e7d839f959a6bba2d5411a2fc9d115216b39ecbff8857269fde
+Description:  LuCI JSON library
+
+Package: luci-lib-luaneightbl
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-base, luci-base
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 2298
+Filename: luci-lib-luaneightbl_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 2904
+MD5Sum: f1c8057470038859dbde745b01ecc0a2
+SHA256sum: bdba717e1682f041aed4e3dccf2d6315e75f7972271998dcabbd7f29f05ba134
+Description:  neightbl - Lua lib for IPv6 neighbors
+
+Package: luci-lib-nixio
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-base
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 29215
+Filename: luci-lib-nixio_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 29685
+MD5Sum: b9aafa40538e6d7c6aea34faf1eff0ba
+SHA256sum: 60b8ea19f8aaeee4a54a71b4f5236bb6082af562409c58eb663f37a7f7fcd24b
+Description:  NIXIO POSIX library
+
+Package: luci-lib-px5g
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-base, luci-lib-nixio
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 29569
+Filename: luci-lib-px5g_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 30135
+MD5Sum: 5f59e33cac6d7052ee3cbde925b66cdd
+SHA256sum: 605c9563193c5b19559c4b67e3c9aae79928ec6ff6e687886492a2a55a5d58ea
+Description:  RSA/X.509 Key Generator (required for LuCId SSL support)
+
+Package: luci-mod-admin-full
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-base
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 67493
+Filename: luci-mod-admin-full_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 68159
+MD5Sum: 203b760b190ca6713ca645c2adcee958
+SHA256sum: 56f7b6b8ea93b2c09443d9ecbd20c623144fa969b70a090d0a3a63890b6175af
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-mod-failsafe
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-base
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 4148
+Filename: luci-mod-failsafe_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 4720
+MD5Sum: 74fd9d2b762374a6f93f8b8a701481d9
+SHA256sum: 805de9ffe69bca9bbcaf94cfcde3d6a2f5ae591d0663db208771e7f231427630
+Description:  LuCI Fail-Safe - Fail-Safe sysupgrade module
+
+Package: luci-mod-freifunk
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-mod-admin-full, luci-lib-json, freifunk-firewall, freifunk-common
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 51500
+Filename: luci-mod-freifunk_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 52249
+MD5Sum: 6019a41eda605d205c6df96fdd32bcc0
+SHA256sum: ab82db1c63746727fc833ffd290ad2128afa5213c54c22f49d2e1edb506867fc
+Description:  LuCI Freifunk module
+
+Package: luci-mod-freifunk-community
+Version: 0.12+svn-r10530-1
+Depends: libc, iptables-mod-nat-extra, iptables-mod-ipopt, luci-app-splash, luci-i18n-german, olsrd, olsrd-mod-dyn-gw-plain, olsrd-mod-jsoninfo, olsrd-mod-nameservice, olsrd-mod-watchdog, kmod-tun, ip, freifunk-watchdog, luci-app-olsr, luci-app-olsr-services, freifunk-gwcheck, freifunk-mapupdate
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 181
+Filename: luci-mod-freifunk-community_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 886
+MD5Sum: 718944f9eb2a3c7c5d1c15a00ce7e95e
+SHA256sum: 518fb3db10631dbd19dd30ffc46066bcac71389ab0bbee4ccffdeebc9adfb0cf
+Description:  Freifunk Community Meta-Package
+
+Package: luci-mod-rpc
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-lib-json
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 2643
+Filename: luci-mod-rpc_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 3237
+MD5Sum: acc5b475ecdfbaf750d5264ccfac2074
+SHA256sum: f09a468de313f29ddc525942a8448a7c8911a49bb7891409609399f8b7dc9947
+Description:  LuCI RPC - JSON-RPC API
+
+Package: luci-proto-3g
+Version: 0.12+svn-r10530-1
+Depends: libc, comgt
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 1836
+Filename: luci-proto-3g_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 2403
+MD5Sum: 54c14650f78a240d40b02890322adb69
+SHA256sum: 4b06b01a4dd9851e3e97ec1f905665792b39ff94cf4d1208a1e3fc76d6f8a3ca
+Description:  Support for 3G
+
+Package: luci-proto-ipv6
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 3449
+Filename: luci-proto-ipv6_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 4057
+MD5Sum: bd148cf63ef4ba03af536efbb11d6a78
+SHA256sum: 407fedd3072b7185616afa97bdf4a4f5e17eb677528533dbb5a933feab8e5e42
+Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite
+
+Package: luci-proto-ppp
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 2975
+Filename: luci-proto-ppp_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 3559
+MD5Sum: 33f947063d5795a1583ad954433c5dc5
+SHA256sum: 33bba6c8e7344952e466198e641312031aa54c0f1f3560e07974b17ea0912c59
+Description:  Support for PPP/PPPoE/PPPoA/PPtP
+
+Package: luci-proto-relay
+Version: 0.12+svn-r10530-1
+Depends: libc, relayd
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 2194
+Filename: luci-proto-relay_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 2783
+MD5Sum: e8a0d46dcadb08af02d79dd970d35d70
+SHA256sum: cd1ad421b4e6b0a08f96a34e2eab714ba2ac3adfb21cdb4edadcd7636d0f3d31
+Description:  Support for relayd pseudo bridges
+
+Package: luci-ssl
+Version: 0.12+svn-r10530-1
+Depends: libc, luci, libustream-polarssl, px5g
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 105
+Filename: luci-ssl_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 697
+MD5Sum: 97fb556eefa6796b9a47b60c4d949816
+SHA256sum: dd9ce74b776fa4a01acfaa6e3c77e8968f65996f37075c3ac17669c5c5f31c98
+Description:  Standard OpenWrt set with HTTPS support
+
+Package: luci-theme-bootstrap
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 12957
+Filename: luci-theme-bootstrap_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 13634
+MD5Sum: c813b9c0f98c47a0fde5a7d2998adee8
+SHA256sum: 82424fbff0ce7dd3b38804999fb8838e45d45da42159a2c81bd948571d65eee0
+Description:  Bootstrap Theme (default)
+
+Package: luci-theme-freifunk-bno
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-base
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: Stefan Pirwitz <stefan-at-freifunk-bno-dot-de>
+Architecture: ramips_24kec
+Installed-Size: 15451
+Filename: luci-theme-freifunk-bno_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 16122
+MD5Sum: cb2ba49cb0a9c5e019f3931f894cb800
+SHA256sum: 3c892c83fae823fc43c1f4465d697e3b197c479c0b32137f4a0ed9230f5f33e3
+Description:  Freifunk Berlin Nordost Theme
+
+Package: luci-theme-freifunk-generic
+Version: 0.12+svn-r10530-1
+Depends: libc, luci-base
+Source: feeds/luci/contrib/package/luci-addons
+Section: luci
+Maintainer: Manuel Munz <freifunk-at-somakoma-dot-de>
+Architecture: ramips_24kec
+Installed-Size: 12702
+Filename: luci-theme-freifunk-generic_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 13408
+MD5Sum: 3da5b6fce4cfde3083afdb97ddbef81f
+SHA256sum: 39656f9be686d067cbbc4b437f21fa7b77383e436e0bb71dd40532ebe344a30e
+Description:  Freifunk Generic Theme
+
+Package: luci-theme-openwrt
+Version: 0.12+svn-r10530-1
+Depends: libc
+Source: feeds/luci/contrib/package/luci
+Section: luci
+Maintainer: LuCI Development Team <luci@lists.subsignal.org>
+Architecture: ramips_24kec
+Installed-Size: 6944
+Filename: luci-theme-openwrt_0.12+svn-r10530-1_ramips_24kec.ipk
+Size: 7682
+MD5Sum: d6f31a8f67b72b6a5997b4ea5d7448b5
+SHA256sum: a732271538aabc07cdf6cb4ea5680168b40d11d421b218c0ae16686adb507a44
+Description:  OpenWrt.org
+
+Package: meshwizard
+Version: 0.1.0
+Depends: libc, firewall
+Source: feeds/luci/contrib/package/meshwizard
+Section: luci
+Architecture: ramips_24kec
+Installed-Size: 12734
+Filename: meshwizard_0.1.0_ramips_24kec.ipk
+Size: 13302
+MD5Sum: 672147c71caffdaa9fed56506b013a4a
+SHA256sum: e64b3a250682e0e4bc85e34d222500e843afd4d874f14d26c9c7a2c373c0ce4f
+Description:  A shellscript based wizard to simplify the setup of a typical mesh node (e.g. for Freifunk.net)
+

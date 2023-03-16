@@ -1,0 +1,1076 @@
+Package: ahcpd
+Version: 0.53-2
+Depends: libc, kmod-ipv6, ip, librt
+Source: feeds/routing/ahcpd
+Section: net
+Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
+Architecture: ramips_24kec
+Installed-Size: 21340
+Filename: ahcpd_0.53-2_ramips_24kec.ipk
+Size: 22034
+MD5Sum: 0757b9b265314f79e440480c8c667d2f
+SHA256sum: 1642ea4e3ede751460d6e1cc2863e6320da9d0aa3219d79073ddeb0270679155
+Description:  Ahcpd is a daemon for configuring an IPv6 network using the Ad-Hoc
+ Configuration Protocol (AHCP).  AHCP is designed for wireless mesh
+ networks, where IPv6 autoconfiguration and DHCPv6 do not work, but may
+ also be used on wired networks.
+
+Package: alfred
+Version: 2014.3.0-0
+Depends: libc, kmod-ipv6, librt
+Source: feeds/routing/alfred
+Section: net
+Architecture: ramips_24kec
+Installed-Size: 17843
+Filename: alfred_2014.3.0-0_ramips_24kec.ipk
+Size: 18869
+MD5Sum: 6623fb13ff66758ff0862222f2a99184
+SHA256sum: 1d6419be6a1bdfe158d2d6b3b852c402d593e181ae82731e43124db401e035ad
+Description:  alfred is a user space daemon for distributing arbitrary local information over
+ the mesh/network in a decentralized fashion. This data can be anything which
+ appears to be useful - originally designed to replace the batman-adv
+ visualization (vis), you may distribute hostnames, phone books, administration
+ information, DNS information, the local weather forecast ...
+ 
+ alfred runs as daemon in the background of the system. A user may insert
+ information by using the alfred binary on the command line, or use special
+ programs to communicate with alfred (done via unix sockets). alfred then takes
+ care of distributing the local information to other alfred servers on other
+ nodes. This is done via IPv6 link-local multicast, and does not require any
+ configuration. A user can request data from alfred, and will receive the
+ information available from all alfred servers in the network.
+
+Package: babeld
+Version: 1.5.1-1
+Depends: libc, kmod-ipv6, librt
+Source: feeds/routing/babeld
+Section: net
+Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
+Architecture: ramips_24kec
+Installed-Size: 45791
+Filename: babeld_1.5.1-1_ramips_24kec.ipk
+Size: 46611
+MD5Sum: e0ef6467d86277203c4ec5d44f114019
+SHA256sum: 65167c1887fe0b38a089f9c94983c3299fdac49c17082448efb614e0c5095937
+Description:  Babel is a loop-avoiding distance-vector routing protocol roughly based
+ on DSDV and AODV, but with provisions for link cost estimation and
+ redistribution of routes from other routing protocols.
+ While it is optimised for wireless mesh networks, Babel will also work
+ efficiently on wired networks. It will generate between 1.2 and 2.4 times
+ the amount of routing traffic that RIPng would generate, while
+ never counting to infinity.
+
+Package: babels
+Version: 2014-07-04-bc5d60e58e7ebd1694cef23d798df08b3b8f216f-1
+Depends: libc, kmod-ipv6
+Source: feeds/routing/babels
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 53735
+Filename: babels_2014-07-04-bc5d60e58e7ebd1694cef23d798df08b3b8f216f-1_ramips_24kec.ipk
+Size: 54715
+MD5Sum: 464772e908924b68683a2d5f9dc42f4e
+SHA256sum: 9edaba5bb154b632046d5457e239f1b021094ca91e42412928b3175e47ccb5d9
+Description:  Babel is a loop-avoiding distance-vector routing protocol roughly based
+ on DSDV and AODV, but with provisions for link cost estimation and
+ redistribution of routes from other routing protocols.
+ While it is optimised for wireless mesh networks, Babel will also work
+ efficiently on wired networks. It will generate between 1.2 and 2.4 times
+ the amount of routing traffic that RIPng would generate, while
+ never counting to infinity.
+ This is experimental source routing branch, and should be only used if you
+ know what you are doing.
+
+Package: batctl
+Version: 2014.2.0-1
+Depends: libc, kmod-batman-adv, libnl-tiny
+Source: feeds/routing/batctl
+Section: net
+Maintainer: Marek Lindner <mareklindner@neomailbox.ch>
+Architecture: ramips_24kec
+Installed-Size: 22079
+Filename: batctl_2014.2.0-1_ramips_24kec.ipk
+Size: 22732
+MD5Sum: 6db0eefb66cfde958e10213c8d3770d9
+SHA256sum: 9a70d54c30ec23cf1ebd7347e2af75b810d335849957ebc9a638e7cd4051de22
+Description:  batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
+ It is an easier method for configuring batman-adv and provides some
+ additional tools for debugging as well. This package builds
+ version 2014.2.0 of the user space utility.
+
+Package: batmand
+Version: r1439-2
+Depends: libc, libpthread, kmod-tun
+Source: feeds/routing/batmand
+Section: net
+Maintainer: Marek Lindner <lindner_marek@yahoo.de>
+Architecture: ramips_24kec
+Installed-Size: 37427
+Filename: batmand_r1439-2_ramips_24kec.ipk
+Size: 38075
+MD5Sum: 6f2051474e4f6093252c8f0179c5e39d
+SHA256sum: 69a1268c6ac321bbec7f73cbc8096be6573aad209fc873978210ffd21abe2a2b
+Description:  B.A.T.M.A.N. layer 3 routing daemon
+
+Package: bcp38
+Version: 4-1
+Depends: libc, ipset
+Source: feeds/routing/bcp38
+Section: net
+Maintainer: Dave Taht <d+bcp38@taht.net>
+Architecture: ramips_24kec
+Installed-Size: 1572
+Filename: bcp38_4-1_ramips_24kec.ipk
+Size: 2306
+MD5Sum: 2c8d57b0820d2a82ef778005a89b6e1b
+SHA256sum: 73e70f3b37a2c064438073343c365f84e7f197316983f7544326f6a096deb186
+Description:  bcp38 implements rfc bcp 38 for home routers.
+
+Package: bird4
+Version: 1.4.3-1
+Depends: libc, libpthread
+Source: feeds/routing/bird
+Section: net
+Architecture: ramips_24kec
+Installed-Size: 166207
+Filename: bird4_1.4.3-1_ramips_24kec.ipk
+Size: 166995
+MD5Sum: 5fb433e1e3f8664dc413e5532b4772cc
+SHA256sum: 39d5edebb98c3493c831badb0e2098d77e94dfd03004b8bd96c60516051afe30
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is IPv4 version of BIRD, it supports OSPFv2, RIPv2 and BGP
+ protocols.
+ 
+ In BGP, BIRD supports communities, multiprotocol extensions, MD5
+ authentication, 32bit AS numbers and could act as a route server or a
+ route reflector. BIRD also supports multiple RIBs, multiple kernel
+ routing tables and redistribution between the protocols with a powerful
+ configuration syntax.
+ 
+
+Package: bird6
+Version: 1.4.3-1
+Depends: libc, libpthread
+Source: feeds/routing/bird
+Section: net
+Architecture: ramips_24kec
+Installed-Size: 186727
+Filename: bird6_1.4.3-1_ramips_24kec.ipk
+Size: 187572
+MD5Sum: a73fda5f21119ff6a854adc56ea43ea8
+SHA256sum: 6bfcfa7e55364928930f2e63e53f588739f92f5ae4c070da496075c5a6360e2e
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is IPv6 version of BIRD, it supports OSPFv3, RIPng and BGP
+ protocols.
+ 
+ In BGP, BIRD supports communities, multiprotocol extensions, MD5
+ authentication, 32bit AS numbers and could act as a route server or a
+ route reflector. BIRD also supports multiple RIBs, multiple kernel
+ routing tables and redistribution between the protocols with a powerful
+ configuration syntax.
+ 
+
+Package: birdc4
+Version: 1.4.3-1
+Depends: libc, libreadline, libncurses, bird4
+Source: feeds/routing/bird
+Section: net
+Architecture: ramips_24kec
+Installed-Size: 10804
+Filename: birdc4_1.4.3-1_ramips_24kec.ipk
+Size: 11681
+MD5Sum: ac563daf31ee0875a5ae157712a3c343
+SHA256sum: bf8159ca055b32ac371a1ca5089af91265071788cd05fc612c4ac5b2cb59bf10
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is a BIRD command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+ Unless you can't afford dependency on ncurses and readline, you
+ should install BIRD command-line client together with BIRD.
+ 
+
+Package: birdc6
+Version: 1.4.3-1
+Depends: libc, libreadline, libncurses, bird6
+Source: feeds/routing/bird
+Section: net
+Architecture: ramips_24kec
+Installed-Size: 12046
+Filename: birdc6_1.4.3-1_ramips_24kec.ipk
+Size: 12910
+MD5Sum: 2883d5f1303d6120efcb75f97c3fd60a
+SHA256sum: 82b91d69e5668ec50990b4e4941086bee0e546e28bfdfaea625629055736b6d6
+Description:  BIRD is an internet routing daemon which manages TCP/IP routing tables
+ with support of modern routing protocols, easy to use configuration
+ interface and powerful route filtering language. It is lightweight and
+ efficient and therefore appropriate for small embedded routers.
+ 
+ This is a BIRD command-line client. It is used to send commands to BIRD,
+ commands can perform simple actions such as enabling/disabling of
+ protocols, telling BIRD to show various information, telling it to show
+ a routing table filtered by a filter, or asking BIRD to reconfigure.
+ 
+ Unless you can't afford dependency on ncurses and readline, you
+ should install BIRD command-line client together with BIRD.
+ 
+
+Package: bmx6
+Version: r2015061604-4
+Depends: libc, kmod-ip6-tunnel, kmod-iptunnel6, kmod-tun
+Source: feeds/routing/bmx6
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: ramips_24kec
+Installed-Size: 140162
+Filename: bmx6_r2015061604-4_ramips_24kec.ipk
+Size: 140607
+MD5Sum: 7af35e522ce2cfc8141cbd6436add76d
+SHA256sum: d889cf6ed69c60deb6d8b1682ebc8a8b1d6a2da377ebf74628031ce27309b898
+Description:  BMX6 layer 3 routing daemon supporting IPv4, IPv6, and IPv4 over IPv6
+
+Package: bmx6-json
+Version: r2015061604-4
+Depends: libc, bmx6, libjson
+Source: feeds/routing/bmx6
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: ramips_24kec
+Installed-Size: 6310
+Filename: bmx6-json_r2015061604-4_ramips_24kec.ipk
+Size: 6878
+MD5Sum: 158619ea5028c0ecfe2d760ae57134ad
+SHA256sum: c4aad008c138764b4eb35e9e894af8bce65ef11b4fe8669132d5bb44401d224e
+Description:  json plugin based on jsonc
+
+Package: bmx6-sms
+Version: r2015061604-4
+Depends: libc, bmx6
+Source: feeds/routing/bmx6
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: ramips_24kec
+Installed-Size: 5155
+Filename: bmx6-sms_r2015061604-4_ramips_24kec.ipk
+Size: 5688
+MD5Sum: 3a493f3d56995eb97fd2228294055763
+SHA256sum: db9b02def54d7cb72ccee382d4fc9105e3ed57bad04db93d2a589dea85165fe8
+Description:  sms plugin
+
+Package: bmx6-table
+Version: r2015061604-4
+Depends: libc, bmx6
+Source: feeds/routing/bmx6
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: ramips_24kec
+Installed-Size: 8994
+Filename: bmx6-table_r2015061604-4_ramips_24kec.ipk
+Size: 9611
+MD5Sum: bd345c2df8b369e6b206ab10e4b24d30
+SHA256sum: c3638fce7a0df256d17e4def0b10f29059e1ba29fa51e4e185f1bef5bee8ec20
+Description:  bmx6 table plugin to automatic announce routing-table routes via ip6ip tunnels
+
+Package: bmx6-uci-config
+Version: r2015061604-4
+Depends: libc, bmx6, libuci
+Source: feeds/routing/bmx6
+Section: net
+Maintainer: Axel Neumann <neumann@cgws.de>
+Architecture: ramips_24kec
+Installed-Size: 8489
+Filename: bmx6-uci-config_r2015061604-4_ramips_24kec.ipk
+Size: 9147
+MD5Sum: b9e6964b9ca7184afe46595976ca3c6b
+SHA256sum: 61e33eb2166ba90018244d4614a714a528de257eeb5e11fe4493d104c5b9c266
+Description:  configuration plugin based on uci (recommended!)
+
+Package: hnetd
+Version: 2014-09-02-91aaab8bdd4de8bc96ad906673a79a6600cf93ac-2
+Depends: libc, odhcpd, odhcp6c, netifd
+Source: feeds/routing/hnetd
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 76515
+Filename: hnetd_2014-09-02-91aaab8bdd4de8bc96ad906673a79a6600cf93ac-2_ramips_24kec.ipk
+Size: 77331
+MD5Sum: 0f275b2ef016b0ac2234317710beef36
+SHA256sum: c7e6281e974ec9508416e371dc4c05696acf20e91940746b38e06fe19deb56c7
+Description:  This package provides a daemon which implementats distributed prefix assignment
+ and service discovery for a home network consisting of multiple routers
+ connected to multiple service providers. It provides a netifd protocol "hnet"
+ for use in /etc/config/network.
+
+Package: hnet-full
+Version: 2014-09-02-91aaab8bdd4de8bc96ad906673a79a6600cf93ac-2
+Depends: libc, hnetd, luci-app-hnet, babels, ohybridproxy, miniupnpd, minimalist-pcproxy
+Source: feeds/routing/hnetd
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 106
+Filename: hnet-full_2014-09-02-91aaab8bdd4de8bc96ad906673a79a6600cf93ac-2_ramips_24kec.ipk
+Size: 728
+MD5Sum: e5e6a495c531657439823ebce97ceac7
+SHA256sum: 5245a3b07c7706f147a299790e7624f16a9b9ed3e8db410a55a0586d6159da02
+Description:  HNCP Homenet metapackage
+
+Package: kmod-batman-adv
+Version: 3.10.49+2014.2.0-1
+Depends: kernel (=3.10.49-1-3df3ab26a49a04478a9633bf83827ca3), kmod-lib-crc16, kmod-crypto-core, kmod-crypto-crc32c, kmod-lib-crc32c
+Source: feeds/routing/batman-adv
+Section: kernel
+Maintainer: Marek Lindner <mareklindner@neomailbox.ch>
+Architecture: ramips_24kec
+Installed-Size: 70679
+Filename: kmod-batman-adv_3.10.49+2014.2.0-1_ramips_24kec.ipk
+Size: 71446
+MD5Sum: 7ed401103a8b72e4b5639bab78afa639
+SHA256sum: 5d02b6cebf5e07cf7ef5ce98d301f655190fc84aad818d79514c77b0be24ee50
+Description:  B.A.T.M.A.N. advanced is a kernel module which allows to
+ build layer 2 mesh networks. This package builds
+ version 2014.2.0 of the kernel module.
+
+Package: kmod-nat46
+Version: 3.10.49+1-1
+Depends: kernel (=3.10.49-1-3df3ab26a49a04478a9633bf83827ca3), kmod-ipv6
+Source: feeds/routing/nat46
+Section: kernel
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 14714
+Filename: kmod-nat46_3.10.49+1-1_ramips_24kec.ipk
+Size: 15401
+MD5Sum: 4251838507164cf17bfaa158bea47b56
+SHA256sum: 6823cfacd4ae84ac331e16cdf04da9e007e07ebc2c04efb46c8f95c3d8a11db6
+Description:  Stateless NAT46 translation kernel module
+
+Package: luci-app-bcp38
+Version: 2-1
+Depends: libc, lua, luci-base, bcp38
+Source: feeds/routing/luci-app-bcp38
+Section: luci
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Architecture: all
+Installed-Size: 1532
+Filename: luci-app-bcp38_2-1_all.ipk
+Size: 2213
+MD5Sum: bd8e7a1bf703791109f247e8930a81bd
+SHA256sum: 16ca803c01c2c56d0e0d2408230135085e06f7b98c4cd29ffb7e156cc2d3eb67
+Description:  Control BCP38 subnet blocking
+
+Package: luci-app-bmx6
+Version: 2
+Depends: libc, luci-lib-json, luci-mod-admin-core, luci-lib-httpclient, bmx6
+Source: feeds/routing/luci-app-bmx6
+Section: luci
+Maintainer: Pau Escrich <p4u@dabax.net>
+Architecture: ramips_24kec
+Installed-Size: 94388
+Filename: luci-app-bmx6_2_ramips_24kec.ipk
+Size: 95106
+MD5Sum: edd2cc30a313afd1e7632e3c81f635d9
+SHA256sum: 1112aa20ed5f03e70cab3331f74c976fff8a413ff822751d1e1859e567b16995
+Description:  bmx6 web module for LuCi web interface
+
+Package: luci-app-hnet
+Version: 2014-09-02-91aaab8bdd4de8bc96ad906673a79a6600cf93ac-2
+Depends: libc, hnetd
+Source: feeds/routing/hnetd
+Section: luci
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 56772
+Filename: luci-app-hnet_2014-09-02-91aaab8bdd4de8bc96ad906673a79a6600cf93ac-2_ramips_24kec.ipk
+Size: 57452
+MD5Sum: 7f40f0d2c2a375a1cdbdb282b508e535
+SHA256sum: 110f27404b4d5d768e5bed97458a997d1032f9d36d67d3d8545b3441473165c7
+Description:  HNCP Homenet configuration and visualization
+
+Package: map-t
+Version: 1
+Depends: libc, map, kmod-nat46
+Source: feeds/routing/nat46
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 104
+Filename: map-t_1_ramips_24kec.ipk
+Size: 640
+MD5Sum: 2317f49801e6ee4b4d46598701f00f6c
+SHA256sum: 30161729d8ac1812b5343aeae6b63ea8d78ca72e9bbfe06cbb9be680e372e342
+Description:  MAP-T configuration support
+
+Package: mcproxy
+Version: 2014-05-02-bbb2e7ee230c172e68766946e4b4e48f7449ee15-1
+Depends: libc, libpthread, libstdcpp
+Source: feeds/routing/mcproxy
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 116722
+Filename: mcproxy_2014-05-02-bbb2e7ee230c172e68766946e4b4e48f7449ee15-1_ramips_24kec.ipk
+Size: 117542
+MD5Sum: f875176467ca14079ccc263a0b6c0b6b
+SHA256sum: afc0fa2a22561cd8c84358fcf53c997c636a9d52e87ab48909e9e3937c6257f7
+Description:  mcproxy is a free & open source implementation of the IGMP/MLD proxy function (see  RFC 4605) for Linux systems.
+ It operates on the kernel tables for multicast routing and allows for multiple instantiations,
+ as well as dynamically changing downstream interfaces.
+
+Package: minimalist-pcproxy
+Version: 2014-06-02-c8d47ff42c4354f502830faeae13bd8f269401af-2
+Depends: libc, libubox
+Source: feeds/routing/minimalist-pcproxy
+Section: net
+Maintainer: Markus Stenberg <fingon@iki.fi>
+Architecture: ramips_24kec
+Installed-Size: 5883
+Filename: minimalist-pcproxy_2014-06-02-c8d47ff42c4354f502830faeae13bd8f269401af-2_ramips_24kec.ipk
+Size: 6757
+MD5Sum: 72fb0dc821a535d664458813106fa614
+SHA256sum: 109e1169df2f37fe51ab7465f7f1b51a672564055947cd5646bf64c0cd17e7de
+Description:  This package contains a daemon which can be used to forward
+ PCP (Port Control Protocol - RFC6887) requests requests to PCP remote servers.
+ 
+ In and of itself, it is not very useful, but combined with hnetd+miniupnpd
+ it allows for control of NAT forwarding and firewall pinholes from multiple
+ hops away.
+
+Package: miniupnpd
+Version: 1.8.20140523-4
+Depends: libc, iptables, libip4tc, libip6tc, ip6tables, libnfnetlink
+Source: feeds/routing/miniupnpd
+Section: net
+Maintainer: Markus Stenberg <fingon@iki.fi>
+Architecture: ramips_24kec
+Installed-Size: 53224
+Filename: miniupnpd_1.8.20140523-4_ramips_24kec.ipk
+Size: 53893
+MD5Sum: 053c8247b8d1d43c97c3ba8aab56899a
+SHA256sum: 6fcddc01b0fd31b0dc9967aacae8550eb21cd2792867ce40d4ec16a41ea0bfef
+Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon
+
+Package: mrd6
+Version: 2013-11-30-c805eb33255dbc0b6647d463c6c67d1c9d3105a0-1
+Depends: libc, libstdcpp
+Source: feeds/routing/mrd6
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 277774
+Filename: mrd6_2013-11-30-c805eb33255dbc0b6647d463c6c67d1c9d3105a0-1_ramips_24kec.ipk
+Size: 278358
+MD5Sum: 1116791a8be8e3fccd820cb6288da94d
+SHA256sum: 4210c838d6dabee75c97ae059405b37cd521b5260ccb2c9cacfd24a350d98a27
+Description:  Multicast is becoming a major component in next generation networks, used 
+ in several scenarios, from video broadcasting to multimedia conferencing. 
+ In order to be implemented, new technology needs supporting hardware and 
+ software across a set of devices and systems. MRD6 is an implementation of 
+ a modular IPv6 Multicast Routing Framework for the Linux operating system 
+ and provides MLDv2 (as well as MLDv1), PIM-SM and MBGP support.
+
+Package: ndppd
+Version: 0.2.3-1
+Depends: libc, kmod-ipv6, uclibcxx
+Source: feeds/routing/ndppd
+Section: net
+Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
+Architecture: ramips_24kec
+Installed-Size: 31619
+Filename: ndppd_0.2.3-1_ramips_24kec.ipk
+Size: 32257
+MD5Sum: d60aeb45e20de424e222c64ba4022bc3
+SHA256sum: 3cdd076fc204757d5a1f90c8818e200b5c19e61caddd122382353679c4004783
+Description:  ndppd, or NDP Proxy Daemon, is a daemon that proxies NDP (Neighbor Discovery
+ Protocol) messages between interfaces.  ndppd currently only supports Neighbor
+ Solicitation Messages and Neighbor Advertisement Messages.
+ 
+ The ndp_proxy provided by Linux doesn't support listing proxies, and only hosts
+ are supported.  No subnets.  ndppd solves this by listening for Neighbor
+ Solicitation messages on an interface, then query the internal interfaces for
+ that target IP before finally sending a Neighbor Advertisement message.
+
+Package: nodogsplash
+Version: 0.9_beta9.9.8-2
+Depends: libc, libpthread, iptables-mod-ipopt
+Source: feeds/routing/nodogsplash
+Section: net
+Architecture: ramips_24kec
+Installed-Size: 47529
+Filename: nodogsplash_0.9_beta9.9.8-2_ramips_24kec.ipk
+Size: 47981
+MD5Sum: e4688b472a0a28b97c09712f780cf419
+SHA256sum: 849a2a3c96bc89d15ba9f03c832e0f01aacd1cb5dd129081931b321b9f6a7aa1
+Description:  Nodogsplash offers a simple way to open a free hotspot providing
+ restricted access to an internet connection.
+
+Package: ohybridproxy
+Version: 2014-06-19-3a9489615c488afa85a823a40aea89b39bbac391-1
+Depends: libc, libubox, mdnsd
+Source: feeds/routing/ohybridproxy
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 9935
+Filename: ohybridproxy_2014-06-19-3a9489615c488afa85a823a40aea89b39bbac391-1_ramips_24kec.ipk
+Size: 10599
+MD5Sum: 977c524b8db64f312804ded9e06d8f76
+SHA256sum: 886b3502cd38131dd3ff5b6b30b16082f660e1dabcdf493b9c9eacc8d6fa046a
+Description:  This package provides a statically configured daemon for translating DNS
+ requests to Multicast DNS and back again.
+
+Package: olsrd
+Version: 0.9.0.1-6
+Depends: libc, libpthread
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 128593
+Filename: olsrd_0.9.0.1-6_ramips_24kec.ipk
+Size: 129102
+MD5Sum: 79c2f95617136d2c268c209ea7e49983
+SHA256sum: 9970ccc83afeda0ea14c852dc63249d63a2ec2fd2b82b3d59004232da71392ca
+Description:  OLSR (Optimized Link State Routing) daemon
+
+Package: olsrd-mod-arprefresh
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 1934
+Filename: olsrd-mod-arprefresh_0.9.0.1-6_ramips_24kec.ipk
+Size: 2545
+MD5Sum: 027a2874403b40ea48e8d5c7c0e29318
+SHA256sum: 5e75499487aaa54aad33c430ab998e4e86952ffbdbd8c76e8ccfbbf9a326a7f7
+Description:  Kernel ARP cache refresh plugin
+
+Package: olsrd-mod-bmf
+Version: 0.9.0.1-6
+Depends: libc, olsrd, kmod-tun
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 12003
+Filename: olsrd-mod-bmf_0.9.0.1-6_ramips_24kec.ipk
+Size: 12630
+MD5Sum: d1d82c36c4dbf2d608750a04a31dac0d
+SHA256sum: e48312ea72a2726c18d472ab583c46c8cc37ae21403f6a7b26b9eea4421246e6
+Description:  Basic multicast forwarding plugin
+
+Package: olsrd-mod-dot-draw
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 3680
+Filename: olsrd-mod-dot-draw_0.9.0.1-6_ramips_24kec.ipk
+Size: 4263
+MD5Sum: 5dc6bd3441ec0022141bbb0cc23cc493
+SHA256sum: d70bc298e696b048455af1af76cf372fc3bce917a251982c948548f4bb3fe5cc
+Description:  Dot topology information plugin
+
+Package: olsrd-mod-dyn-gw
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 4050
+Filename: olsrd-mod-dyn-gw_0.9.0.1-6_ramips_24kec.ipk
+Size: 4628
+MD5Sum: b8800185ece52ab96cc22db0bed51e8f
+SHA256sum: 51a916c36fd8cc6a3cd6296e655af3de496ea933007a563a902a387fc9909534
+Description:  Dynamic internet gateway plugin
+
+Package: olsrd-mod-dyn-gw-plain
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 2289
+Filename: olsrd-mod-dyn-gw-plain_0.9.0.1-6_ramips_24kec.ipk
+Size: 2912
+MD5Sum: 114242b70c9cba948a25624196441f5d
+SHA256sum: 11ac40d94bfc8316e6b3869c4c5b2e3edd58e5f11042911eafaf4c7643285b39
+Description:  Dynamic internet gateway plain plugin
+
+Package: olsrd-mod-httpinfo
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 29459
+Filename: olsrd-mod-httpinfo_0.9.0.1-6_ramips_24kec.ipk
+Size: 30076
+MD5Sum: 020f436b141f43d34a2fb0b16fdc1faa
+SHA256sum: c60a14e671a1e6f993205cbc313a2b2aa47592d3b8accd595f43cc91c64f9fe2
+Description:  Small informative web server plugin
+
+Package: olsrd-mod-jsoninfo
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 13497
+Filename: olsrd-mod-jsoninfo_0.9.0.1-6_ramips_24kec.ipk
+Size: 14121
+MD5Sum: 5e976fee4c7ab3d96bf570ffa1199582
+SHA256sum: e1f34176423f7770872959aeffbab685a35a52ed7d1f46148c0f00c23d2fd004
+Description:  Small informative plugin with JSON output
+
+Package: olsrd-mod-mdns
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 8077
+Filename: olsrd-mod-mdns_0.9.0.1-6_ramips_24kec.ipk
+Size: 8737
+MD5Sum: d5b0c17a861d006ed53dd9385792dc09
+SHA256sum: 108363c60f6d746b3783c8287f0fd5f3a504ac330739017069c0fbae6a23bebf
+Description:  MDNS/Zeroconf/Bonjour packet distribution 
+
+Package: olsrd-mod-nameservice
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 10943
+Filename: olsrd-mod-nameservice_0.9.0.1-6_ramips_24kec.ipk
+Size: 11540
+MD5Sum: 81bd3aa30533de36dd3acd140b37c9ce
+SHA256sum: 59600bb5016ea332fe9910c570e69cdcb36a35a159b71923c0fd395d712beef3
+Description:  Lightweight hostname resolver plugin
+
+Package: olsrd-mod-p2pd
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 7761
+Filename: olsrd-mod-p2pd_0.9.0.1-6_ramips_24kec.ipk
+Size: 8416
+MD5Sum: 3f99f1a1bf7082c139b6a34f56de4866
+SHA256sum: 9d837144e8cf9bdbf80c5db8b76524d2cbeb3c3c20394b285cec5088557ce8f5
+Description:  Peer to Peer Discovery plugin
+
+Package: olsrd-mod-pgraph
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 2790
+Filename: olsrd-mod-pgraph_0.9.0.1-6_ramips_24kec.ipk
+Size: 3417
+MD5Sum: f4ec379e5fef2a31608d0f3ce668b4ac
+SHA256sum: 5047f76970fc1c37c05dd50d55170fcf97e7dd7beed6e0cc58629174408b4a6c
+Description:  output network topology for pgraph
+
+Package: olsrd-mod-pud
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 52959
+Filename: olsrd-mod-pud_0.9.0.1-6_ramips_24kec.ipk
+Size: 53603
+MD5Sum: 1fd709268c0d6ca44f8b15a72dbba0e7
+SHA256sum: 0c99350ffe7b20d10b6bb8bc911949e8d0db458b954fc8b88c4b8a0062c8dbf2
+Description:  Position Update Distribution plugin
+
+Package: olsrd-mod-quagga
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 5776
+Filename: olsrd-mod-quagga_0.9.0.1-6_ramips_24kec.ipk
+Size: 6361
+MD5Sum: 696930ea7d7f12264874c73d24ed8f91
+SHA256sum: a2ff900802482877de9b5c28dce1ff7a3a00a402927fb7f67518bd99c4ff1f55
+Description:  Quagga plugin
+
+Package: olsrd-mod-secure
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 9557
+Filename: olsrd-mod-secure_0.9.0.1-6_ramips_24kec.ipk
+Size: 10206
+MD5Sum: da86221d44c15302138f47e3eb54e76c
+SHA256sum: 2169264b4eedb533e0d5bed5ac42d0f4332bd006b53de2669ad28337a27ede01
+Description:  Message signing plugin to secure routing domain
+
+Package: olsrd-mod-sgwdynspeed
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 4452
+Filename: olsrd-mod-sgwdynspeed_0.9.0.1-6_ramips_24kec.ipk
+Size: 5095
+MD5Sum: b3049c16f705848a77d2d7e260dc338c
+SHA256sum: 505e4b2aba4bbabb469654516fdaba285178b78ee8f9380ec9005b3e800cf593
+Description:  Smart Gateway dynamic speed plugin
+
+Package: olsrd-mod-txtinfo
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 6793
+Filename: olsrd-mod-txtinfo_0.9.0.1-6_ramips_24kec.ipk
+Size: 7431
+MD5Sum: 5743ec5cebcad9f7651ed51c7d5cc1a1
+SHA256sum: c9a503c0fb5af3a42e6439be1e1bde6a018b2a480161ba3186650c85d2ccd66f
+Description:  Small informative web server plugin
+
+Package: olsrd-mod-watchdog
+Version: 0.9.0.1-6
+Depends: libc, olsrd
+Source: feeds/routing/olsrd
+License: BSD-3-Clause
+Section: net
+Maintainer: Saverio Proto <zioproto@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 1691
+Filename: olsrd-mod-watchdog_0.9.0.1-6_ramips_24kec.ipk
+Size: 2298
+MD5Sum: 149024b9c8d2b4cbc33e0afca1ea5d73
+SHA256sum: 6ff7e83d71a3f351da0ff1a2e5721157f9117485c2cac626cf9546686c323e19
+Description:  Watchdog plugin
+
+Package: oonf-dlep-proxy
+Version: 0.9.1-r2
+Depends: libc, librt, libnl-tiny, libuci, oonf-init-scripts
+Source: feeds/routing/oonf-dlep-proxy
+Section: net
+Maintainer: Henning Rogge <hrogge@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 94416
+Filename: oonf-dlep-proxy_0.9.1-r2_ramips_24kec.ipk
+Size: 95146
+MD5Sum: b2191f396ff9517ccb3e936302b3e91d
+SHA256sum: 96111f0e6ed4daa649ee38eee4b6aa6de8a0fce11f2d104b4128e6dae634b589
+Description:  Build DLEP Radio+Router Agent
+
+Package: oonf-dlep-radio
+Version: 0.9.1-r2
+Depends: libc, librt, libnl-tiny, libuci, oonf-init-scripts
+Source: feeds/routing/oonf-dlep-radio
+Section: net
+Maintainer: Henning Rogge <hrogge@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 91495
+Filename: oonf-dlep-radio_0.9.1-r2_ramips_24kec.ipk
+Size: 92221
+MD5Sum: 30f20af88e95f64af03e669f6a24ee31
+SHA256sum: ba23c3968e1f4f3d172325e29bdd77912dd2018fc1771d3fb43f2b75214ff97e
+Description:  Build DLEP Radio Agent
+
+Package: oonf-init-scripts
+Version: 0.9.1-r3
+Depends: libc
+Source: feeds/routing/oonf-init-scripts
+Section: net
+Maintainer: Henning Rogge <hrogge@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 1391
+Filename: oonf-init-scripts_0.9.1-r3_ramips_24kec.ipk
+Size: 1988
+MD5Sum: 0ab190178ee612b1f7bf468efdaaec8f
+SHA256sum: 16c098f0f8cffb49164ef2c494b23ce4a9984fbbf4a8076326f7a0527828e9a8
+Description:  Common OONF startup scripts
+
+Package: oonf-olsrd2
+Version: 0.9.1-r2
+Depends: libc, librt, libnl-tiny, libuci, oonf-init-scripts
+Source: feeds/routing/oonf-olsrd2
+Section: net
+Maintainer: Henning Rogge <hrogge@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 148661
+Filename: oonf-olsrd2_0.9.1-r2_ramips_24kec.ipk
+Size: 149143
+MD5Sum: c24b994f4adaddd59525d98e72e10d3d
+SHA256sum: a29a4a3001cbc0c07a48743e5f67c411297808ebac28019de4b09867e15c8722
+Description:  Build Olsrd V2 Routing Agent
+
+Package: pim6sd
+Version: 2014-04-06-1
+Depends: libc
+Source: feeds/routing/mcast-tools
+Section: net
+Maintainer: Steven Barth <cyrus@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 75853
+Filename: pim6sd_2014-04-06-1_ramips_24kec.ipk
+Size: 76509
+MD5Sum: a2ced79476c5fa05b1bc4eb3b2b4bb61
+SHA256sum: 7b58c85fc19c9db3eb8c97090e71df9c05f7c56d4dc122aa2538240e971723fc
+Description:  pim6sd is an IPv6 multicast routing daemon, which supports PIMv2(Protocol
+ Independent Multicast Version 2) sparse mode and SSM(Source-Specific-
+ Multicast) for IPv6.
+
+Package: quagga
+Version: 0.99.22.3-1
+Depends: libc, librt
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 2394
+Filename: quagga_0.99.22.3-1_ramips_24kec.ipk
+Size: 3031
+MD5Sum: bfb9da9498f78164c9fda4217ce3ee60
+SHA256sum: d3ffaade7ba0829f7378a4a94b55a76fab870c8037f3f50ca6c02dca3f1f2017
+Description:  A routing software package that provides TCP/IP based routing services
+ with routing protocols support such as RIPv1, RIPv2, RIPng, OSPFv2,
+ OSPFv3, BGP-4, and BGP-4+
+
+Package: quagga-babeld
+Version: 0.99.22.3-1
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 35061
+Filename: quagga-babeld_0.99.22.3-1_ramips_24kec.ipk
+Size: 35641
+MD5Sum: 41b832ca86a987884ac1a6383619f3a6
+SHA256sum: 115eda079a98d19ed132dc3159c8750b0ed539c7b282e6cc569b8b5178d51ddb
+Description:  Babel routing engine
+
+Package: quagga-bgpd
+Version: 0.99.22.3-1
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 171513
+Filename: quagga-bgpd_0.99.22.3-1_ramips_24kec.ipk
+Size: 171061
+MD5Sum: ad8b02292001fa5c51be174e6dc28052
+SHA256sum: 88b28be00071172d8b483df3af8fba2a7196e91d137a8e221ee313d565b62662
+Description:  BGPv4, BGPv4+, BGPv4- routing engine
+
+Package: quagga-isisd
+Version: 0.99.22.3-1
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 71057
+Filename: quagga-isisd_0.99.22.3-1_ramips_24kec.ipk
+Size: 71532
+MD5Sum: ae391ddb38f9ca7cbb39d825b5c4c151
+SHA256sum: 7f1edb22f9a7ba9b973e726878043a99032d7d8a22b60b654532724405046d7a
+Description:  IS-IS routing engine
+
+Package: quagga-libospf
+Version: 0.99.22.3-1
+Depends: libc, quagga
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 165918
+Filename: quagga-libospf_0.99.22.3-1_ramips_24kec.ipk
+Size: 165923
+MD5Sum: 1c2f100cb098f3606d89e1f19d6d87b8
+SHA256sum: 89a2664a581a60fabb8c5b82c6a95a99384a03fe2bfb2e5c9960908cb523e67e
+Description:  OSPF library
+
+Package: quagga-libzebra
+Version: 0.99.22.3-1
+Depends: libc, quagga
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 106383
+Filename: quagga-libzebra_0.99.22.3-1_ramips_24kec.ipk
+Size: 106413
+MD5Sum: 67bc41fcbe735047d44e256923b025d5
+SHA256sum: 2af509eae7118e325550f59af7328843caffcd81dc9d17a2674f2c4df5661b4c
+Description:  zebra library
+
+Package: quagga-ospf6d
+Version: 0.99.22.3-1
+Depends: libc, quagga, quagga-libospf, quagga-libzebra
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 74347
+Filename: quagga-ospf6d_0.99.22.3-1_ramips_24kec.ipk
+Size: 74801
+MD5Sum: 7e55b37ac222b37cf2548fb3c746732d
+SHA256sum: ded7be24094ce5ac3e8cbe25cdc76171805e0e2bc9eba18b8f6d82304e563ec9
+Description:  OSPFv3 routing engine
+
+Package: quagga-ospfd
+Version: 0.99.22.3-1
+Depends: libc, quagga, quagga-libospf, quagga-libzebra
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 3776
+Filename: quagga-ospfd_0.99.22.3-1_ramips_24kec.ipk
+Size: 4372
+MD5Sum: 420f6d730e40c89b4756379c9bd60b45
+SHA256sum: 4190ae534abe3355d2e07da49436dd0e08e9ac6cae1c96f06db88881212aee2a
+Description:  OSPFv2 routing engine
+
+Package: quagga-ripd
+Version: 0.99.22.3-1
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 33414
+Filename: quagga-ripd_0.99.22.3-1_ramips_24kec.ipk
+Size: 33748
+MD5Sum: bf4ebf7237659e9ae90cea653f511424
+SHA256sum: 41d8214c545ae42d5efd688c6b75e3380b2140417b2ef5038bd6cc59935cb58a
+Description:  RIP routing engine
+
+Package: quagga-ripngd
+Version: 0.99.22.3-1
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 27072
+Filename: quagga-ripngd_0.99.22.3-1_ramips_24kec.ipk
+Size: 27395
+MD5Sum: c54c736b6bc5af8eb64556831c0e2bdb
+SHA256sum: f4674a1d583c17ce0b18bf9a0b4ec075cab240902a2a2eedcb112e618fc7993c
+Description:  RIPNG routing engine
+
+Package: quagga-vtysh
+Version: 0.99.22.3-1
+Depends: libc, quagga, quagga-libzebra, libreadline, libncurses
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 101745
+Filename: quagga-vtysh_0.99.22.3-1_ramips_24kec.ipk
+Size: 102154
+MD5Sum: 3daf99920a13491aabf22edd5ff0122a
+SHA256sum: 9da017744b9cd97e6318c5ba9131492bac5854cd880111b185199ebda7dac7f6
+Description:  integrated shell for Quagga routing software
+
+Package: quagga-watchquagga
+Version: 0.99.22.3-1
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 11044
+Filename: quagga-watchquagga_0.99.22.3-1_ramips_24kec.ipk
+Size: 11619
+MD5Sum: 1597cd2b57adf15f60c45e9d16f56afa
+SHA256sum: 7b670fdc22d6d1462eddb7235aeeef446aa53915cc3cbc316aeb76db2c17d1e8
+Description:  Quagga watchdog
+
+Package: quagga-zebra
+Version: 0.99.22.3-1
+Depends: libc, quagga, quagga-libzebra
+Source: feeds/routing/quagga
+Section: net
+Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
+Architecture: ramips_24kec
+Installed-Size: 63969
+Filename: quagga-zebra_0.99.22.3-1_ramips_24kec.ipk
+Size: 64293
+MD5Sum: 0261d0ca59375fccce6f435cecb5ef0c
+SHA256sum: f70aff68721db6cbe3b35906aa7e43ad5c51e0fbc20add9d6606750f2bcdf97d
+Description:  Zebra daemon
+
+Package: vis
+Version: r1439-2
+Depends: libc, libpthread
+Source: feeds/routing/batmand
+Section: net
+Maintainer: Marek Lindner <lindner_marek@yahoo.de>
+Architecture: ramips_24kec
+Installed-Size: 9975
+Filename: vis_r1439-2_ramips_24kec.ipk
+Size: 10579
+MD5Sum: ee0ad1fccdc2559b6d1d8eb6eb0db88a
+SHA256sum: 2cb91dcae5a4e2daa1b74b8b67e493adf67fc3a0f33df651e6c5964ef5f12676
+Description:  visualization server for B.A.T.M.A.N. layer 3
+
